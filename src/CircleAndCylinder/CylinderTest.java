@@ -32,6 +32,8 @@ public class CylinderTest {
                 + " height=" + c3.getHeight()
                 + " base area=" + c3.getArea()
                 + " volume= " + c3.getVolume()+" color= "+c3.getColor());
+        System.out.println(c3.getVolume());
+        System.out.println(c3.getArea());
 
     }
 }

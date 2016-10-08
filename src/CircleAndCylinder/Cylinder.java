@@ -31,5 +31,9 @@ public class Cylinder extends Circle {
     public double getVolume(){
         return getArea()*height;
     }
+    @Override
+    public double getArea(){
+        return 2*Math.PI*getRadius()*height;
+    }
 
 }
