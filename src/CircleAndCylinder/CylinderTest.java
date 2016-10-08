@@ -34,6 +34,7 @@ public class CylinderTest {
                 + " volume= " + c3.getVolume()+" color= "+c3.getColor());
         System.out.println(c3.getVolume());
         System.out.println(c3.getArea());
+        System.out.println(c3);
 
     }
 }

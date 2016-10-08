@@ -36,4 +36,9 @@ public class Cylinder extends Circle {
         return 2*Math.PI*getRadius()*height;
     }
 
+    @Override
+    public String toString(){
+        return "Cylinder: subclass of " + super.toString()+" height=" + height;
+    }
+
 }
