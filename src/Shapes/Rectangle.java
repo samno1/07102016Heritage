@@ -38,7 +38,7 @@ public class Rectangle extends Shape{
         return width*length;
     }
     public double getPerimeter(){
-        return width+length*2;
+        return (width+length)*2;
     }
     @Override
     public String toString(){

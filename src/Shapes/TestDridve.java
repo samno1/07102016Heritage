@@ -18,9 +18,15 @@ public class TestDridve {
         System.out.println(c1);
         System.out.println("area="+c1.getArea()+" perimeter="+c1.getPerimeter());
 
-        Rectangle r=new Rectangle(5,10);
+        Rectangle r=new Rectangle(5,10,"black",true);
         System.out.println("\n"+r);
         System.out.println("area="+r.getArea()+" perimeter="+r.getPerimeter());
+
+        Square s=new Square(5);
+        System.out.println("\n"+s);
+        s.setSide(5);
+        s.setColor("yellow");
+        System.out.println("area="+s.getArea()+" perimeter="+s.getPerimeter());
 
 
     }
