@@ -29,10 +29,11 @@ public class Shape {
         this.filled=filled;
     }
     public  String toString(){
-        String a;
-        if (filled) System.out.println("filled");
-        else System.out.println("not filled");
-        return "Shape with "+color+"color and"+filled;
-    }
 
+        String a;
+        if (filled) a="filled";
+        else a=" not filled";
+
+        return "Shape with "+color+" color and "+a;
+    }
 }
