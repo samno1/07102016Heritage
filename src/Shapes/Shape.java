@@ -3,9 +3,9 @@ package Shapes;
 /**
  * Created by sam1 on 12.10.16.
  */
-public class Shape {
-    private String color="red";
-    private  boolean filled=true;
+public abstract class Shape {
+    protected String color="red";
+    protected   boolean filled=true;
 
     public Shape(){
         this.color=color;
@@ -28,12 +28,16 @@ public class Shape {
     public void setFilled(boolean filled){
         this.filled=filled;
     }
+    public abstract double getArea();
+    public abstract double getPerimeter();
     public  String toString(){
 
         String a;
         if (filled) a="filled";
         else a=" not filled";
 
-        return "Shape with "+color+" color and "+a;
+        return "Shape with "+color+" color and is "+a;
     }
+
+
 }
