@@ -1,9 +1,9 @@
-package CircleAndCylinder;
+package Shapes;
 
 /**
- * Created by sam1 on 08.10.16.
+ * Created by sam1 on 12.10.16.
  */
-public class Cylinder extends Circle {
+public class Cylinder  extends Circle{
     private double height;
 
     public Cylinder(){
@@ -15,11 +15,11 @@ public class Cylinder extends Circle {
         this.height=height;
     }
     public Cylinder(double radius, double height){
-        super(radius,"");
+        super(radius);
         this.height=height;
     }
     public Cylinder(double radius, double height,String color){
-        super(radius,color);
+        super(radius,color,false);
         this.height=height;
     }
     public double getHeight(){
@@ -38,7 +38,6 @@ public class Cylinder extends Circle {
 
     @Override
     public String toString(){
-        return "Cylinder: subclass of " + super.toString()+" height=" + height;
+        return "Cylinder[height="+height+" which is subclass of " + super.toString();
     }
-
 }

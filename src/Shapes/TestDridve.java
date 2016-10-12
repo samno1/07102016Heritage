@@ -1,6 +1,7 @@
 package Shapes;
 
 import CircleAndCylinder.*;
+import CircleAndCylinder.Cylinder;
 
 /**
  * Created by sam1 on 12.10.16.
@@ -28,6 +29,9 @@ public class TestDridve {
         s.setColor("yellow");
         System.out.println("area="+s.getArea()+" perimeter="+s.getPerimeter());
 
+        Cylinder cc = new Cylinder(5,5,"White");
+        System.out.println("\n"+cc);
+        System.out.println(cc.getArea());
 
     }
 }
